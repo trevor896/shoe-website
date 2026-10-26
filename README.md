@@ -11,3 +11,5 @@ Open `docs/index.html` in a browser, or serve the `docs/` directory with any sta
 In the repository settings, open **Pages** and select **Deploy from a branch**, then choose the `main` branch and `/docs` folder. The site will be available at `https://trevor896.github.io/shoe-website/` after GitHub finishes publishing.
 
 GitHub Pages hosts only the static frontend. The separate `backend/` service is not deployed by Pages and requires its own hosting and configuration.
+
+Order submission uses the backend endpoint at `/api/orders`; it will not work on the Pages site until the backend is hosted and the frontend is configured to use that backend.
