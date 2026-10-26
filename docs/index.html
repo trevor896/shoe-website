@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090a09" />
+    <meta name="description" content="The Nike Air Force 1 '07. A timeless court classic, reimagined for every day." />
+    <title>Air Force 1 '07 | LOOO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <script src="js/collections-catalog.js" defer></script>
+    <script src="js/cart-store.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/components/site-footer.js" defer></script>
+    <script src="js/scroll-reveal.js" defer></script>
+  </head>
+  <body>
+    <main class="storefront" id="home">
+      <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="LOOO home">LOOO<span>.</span></a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="collections.html">Collection</a>
+          <a href="about.html">About us</a>
+          <a href="contact.html">Contact us</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="search-control" id="search-control">
+            <input class="search-input" id="product-search" type="search" placeholder="Search the collection" aria-label="Search the collection" tabindex="-1" />
+            <button class="icon-button" id="search-toggle" type="button" aria-label="Open search" aria-expanded="false" aria-controls="product-search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.5 4.5"></path></svg>
+            </button>
+            <span class="visually-hidden" id="search-feedback" aria-live="polite">Try “Air Force 1”</span>
+          </div>
+          <button class="icon-button bag-button" id="bag-toggle" type="button" aria-label="Open shopping bag, 0 items" aria-expanded="false" aria-controls="site-cart-overlay">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5h14l-.8 12H5.8L5 8.5Z"></path><path d="M9 9V6.5a3 3 0 0 1 6 0V9"></path><path d="M9.5 12.5c0 1.5 1 2.5 2.5 2.5s2.5-1 2.5-2.5"></path></svg>
+            <span class="bag-count" id="bag-count" aria-hidden="true">0</span>
+          </button>
+          <span class="mobile-page-label">HOME</span>
+          <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+          </button>
+        </div>
+
+        <section class="popover bag-panel" id="bag-panel" aria-label="Shopping bag" hidden>
+          <div class="popover-heading"><span>Your bag</span><span id="bag-panel-count">0 items</span></div>
+          <p id="bag-message">Your next favourite pair goes here.</p>
+          <button class="text-button" id="clear-bag" type="button" hidden>Clear bag</button>
+        </section>
+      </header>
+
+      <section class="product-hero" id="collection" aria-labelledby="product-name">
+        <div class="product-copy">
+          <p class="eyebrow">The icons, in rotation</p>
+          <h1 id="product-name">AIR FORCE 1</h1>
+          <p class="product-subtitle" id="product-subtitle">Nike Air Force 1 '07</p>
+          <p class="price"><span class="price-amount" id="hero-price">P 1,575</span><span>BWP</span></p>
+          <p class="description">An icon since 1982. Crisp leather, classic proportions, and that unmistakable Air cushioning. Built to move with you.</p>
+          <div class="purchase-row">
+            <button class="add-button" id="add-to-bag" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5h14l-.8 12H5.8L5 8.5Z"></path><path d="M9 9V6.5a3 3 0 0 1 6 0V9"></path></svg>
+              Add to bag
+            </button>
+          </div>
+          <p class="purchase-feedback" id="purchase-feedback" aria-live="polite"></p>
+          <p class="social-label">Follow us</p>
+          <div class="social-links" aria-label="Social media">
+            <a href="https://www.tiktok.com/@nike" aria-label="Nike on TikTok" target="_blank" rel="noreferrer"><img src="assets/social/tiktok.svg" alt="" aria-hidden="true" /></a>
+            <a href="https://www.facebook.com/nike/" aria-label="Nike on Facebook" target="_blank" rel="noreferrer"><img src="assets/social/facebook.svg" alt="" aria-hidden="true" /></a>
+            <a href="https://www.instagram.com/nike/" aria-label="Nike on Instagram" target="_blank" rel="noreferrer"><img src="assets/social/instagram.svg" alt="" aria-hidden="true" /></a>
+            <a href="https://wa.me/?text=Check%20out%20the%20Nike%20Air%20Force%201%20at%20LOOO" aria-label="Share on WhatsApp" target="_blank" rel="noreferrer"><img src="assets/social/whatsapp.svg" alt="" aria-hidden="true" /></a>
+          </div>
+        </div>
+
+        <div class="product-visual" id="product-visual" aria-label="Nike Air Force 1 in White / White">
+          <div class="hero-stage-label">
+            <span id="hero-brand-name">NIKE</span>
+            <span id="hero-brand-position">01 / 03</span>
+          </div>
+          <div class="shoe-stage">
+            <img class="shoe-image" id="shoe-image" src="assets/hero-img/Nike__1.png" alt="Nike Air Force 1 in White / White" />
+          </div>
+          <div class="visual-caption"><span id="color-name">White / White</span><span id="hero-variant-position">01 / 03</span></div>
+          <div class="color-picker" id="hero-swatches" role="group" aria-label="Nike colorways">
+            <button class="color-swatch is-selected" type="button" style="--swatch-color: #f4f4f1" aria-label="Air Force 1, White / White" aria-pressed="true"><span></span></button>
+            <button class="color-swatch" type="button" style="--swatch-color: #151515" aria-label="Air Force 1, Black / Black" aria-pressed="false"><span></span></button>
+            <button class="color-swatch" type="button" style="--swatch-color: #d8434d" aria-label="Air Force 1, Black / University Red" aria-pressed="false"><span></span></button>
+          </div>
+          <div class="hero-controls" aria-label="Switch shoe brand">
+            <button class="gallery-button" id="previous-brand" type="button" aria-label="Previous brand: Puma" data-direction="previous">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"></path></svg>
+            </button>
+            <button class="gallery-button" id="next-brand" type="button" aria-label="Next brand: Adidas" data-direction="next">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="featured-section" id="featured" aria-labelledby="featured-title">
+        <header class="featured-header">
+          <div>
+            <p class="featured-eyebrow">The rotation</p>
+            <h2 id="featured-title">Featured pairs</h2>
+          </div>
+          <p class="featured-index">04 <span>SELECTED</span></p>
+        </header>
+        <div class="featured-grid">
+          <article class="featured-card">
+            <div class="featured-card-content">
+              <span class="featured-image">
+                <span class="featured-badge">Best Seller</span>
+                <span class="featured-brand">VANS</span>
+                <img class="featured-product-image" src="assets/Featured/Vans.jpg" alt="Black and white Vans Old Skool sneakers" />
+                <span class="featured-dots" aria-hidden="true"><i class="is-active"></i><i></i><i></i><i></i></span>
+              </span>
+              <span class="featured-info">
+                <strong>Vans Old Skool</strong>
+                <small>Black / White</small>
+                <span class="featured-description">Durable canvas, suede details, and the iconic side stripe make this skate classic an everyday staple.</span>
+              </span>
+            </div>
+            <div class="featured-buy-row"><b>P 1,250</b><button class="featured-buy-button" type="button" data-buy-product="Vans Old Skool">Buy Now</button></div>
+          </article>
+          <article class="featured-card">
+            <div class="featured-card-content">
+              <span class="featured-image">
+                <span class="featured-badge">Best Seller</span>
+                <span class="featured-brand">PUMA</span>
+                <img class="featured-product-image" src="assets/Featured/Puma%20Psuedo.jpg" alt="Green suede Puma sneakers with white laces" />
+                <span class="featured-dots" aria-hidden="true"><i class="is-active"></i><i></i><i></i><i></i></span>
+              </span>
+              <span class="featured-info">
+                <strong>Puma Suede Classic</strong>
+                <small>Green / White</small>
+                <span class="featured-description">Rich green suede, bold laces, and a cushioned sole give this terrace icon a fresh everyday feel.</span>
+              </span>
+            </div>
+            <div class="featured-buy-row"><b>P 1,350</b><button class="featured-buy-button" type="button" data-buy-product="Puma Suede Classic">Buy Now</button></div>
+          </article>
+          <article class="featured-card">
+            <div class="featured-card-content">
+              <span class="featured-image">
+                <span class="featured-badge">Best Seller</span>
+                <span class="featured-brand">NIKE</span>
+                <img class="featured-product-image" src="assets/Featured/Nike%20Dunk.jpg" alt="Black and white Nike Dunk Low sneakers" />
+                <span class="featured-dots" aria-hidden="true"><i class="is-active"></i><i></i><i></i><i></i></span>
+              </span>
+              <span class="featured-info">
+                <strong>Nike Dunk Low</strong>
+                <small>Black / White</small>
+                <span class="featured-description">Contrasting leather panels and a low-profile court shape make this timeless pair easy to wear.</span>
+              </span>
+            </div>
+            <div class="featured-buy-row"><b>P 1,650</b><button class="featured-buy-button" type="button" data-buy-product="Nike Dunk Low">Buy Now</button></div>
+          </article>
+          <article class="featured-card">
+            <div class="featured-card-content">
+              <span class="featured-image">
+                <span class="featured-badge">Best Seller</span>
+                <span class="featured-brand">adidas</span>
+                <img class="featured-product-image" src="assets/Featured/Adidas%20Campus.jpg" alt="Green adidas Campus sneakers with white stripes and gum soles" />
+                <span class="featured-dots" aria-hidden="true"><i class="is-active"></i><i></i><i></i><i></i></span>
+              </span>
+              <span class="featured-info">
+                <strong>adidas Campus 00s</strong>
+                <small>Green / White / Gum</small>
+                <span class="featured-description">Soft green suede, signature three stripes, and a gum sole bring relaxed style to this classic.</span>
+              </span>
+            </div>
+            <div class="featured-buy-row"><b>P 1,550</b><button class="featured-buy-button" type="button" data-buy-product="adidas Campus 00s">Buy Now</button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="who-section" id="story" aria-labelledby="who-title">
+        <div class="who-inner">
+          <div class="who-collage" aria-label="A look at the shoes we bring to our community">
+            <figure class="who-photo who-photo-main">
+              <img src="assets/Featured/Vans.jpg" alt="Black and white Vans Old Skool sneakers" loading="lazy" />
+            </figure>
+            <figure class="who-photo who-photo-secondary">
+              <img src="assets/Featured/Puma%20Psuedo.jpg" alt="Green suede Puma sneakers with white laces" loading="lazy" />
+            </figure>
+            <p class="who-note"><span>Our point of view</span>Good pairs for real life.</p>
+            <p class="who-caption">A local shop with a wider lens.</p>
+          </div>
+          <div class="who-copy">
+            <p class="who-eyebrow">A bit about us</p>
+            <h2 id="who-title">Who we are</h2>
+            <p class="who-tagline">Locally owned,<br />nationally inspired.</p>
+            <p class="who-bio">LOOO is a locally owned shoe retailer with a nationwide point of view. We bring together familiar classics and fresh finds for everyday wear. As a small, independent team, we believe finding the right pair should feel personal, straightforward, and welcoming.</p>
+            <a class="who-link" href="#featured">Explore the collection</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="testimonials-inner">
+          <header class="testimonials-header">
+            <p class="testimonials-eyebrow">Sample testimonials</p>
+            <h2 id="testimonials-title">What Our <span>Clients</span> Say</h2>
+          </header>
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <span class="testimonial-number" aria-hidden="true">1</span>
+              <blockquote>“Found my everyday pair in minutes. The team made choosing the right fit easy.”</blockquote>
+              <div class="testimonial-profile">
+                <img class="testimonial-avatar" src="assets/Testimonials/704250460521850024.jpg" alt="Portrait of a LOOO customer" loading="lazy" />
+                <h3>Amantle Mokoena</h3>
+                <p>Everyday sneakers</p>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <span class="testimonial-number" aria-hidden="true">2</span>
+              <blockquote>“A great mix of familiar classics and fresh finds, all in one place.”</blockquote>
+              <div class="testimonial-profile">
+                <img class="testimonial-avatar" src="assets/Testimonials/539587599126887589.jpg" alt="Portrait of a LOOO customer" loading="lazy" />
+                <h3>Neo Dube</h3>
+                <p>Classic styles</p>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <span class="testimonial-number" aria-hidden="true">3</span>
+              <blockquote>“Friendly service and a comfortable pair I know I’ll wear for a long time.”</blockquote>
+              <div class="testimonial-profile">
+                <img class="testimonial-avatar" src="assets/Testimonials/Jonas%20Hughes.jpg" alt="Portrait of Jonas Hughes" loading="lazy" />
+                <h3>Jonas Hughes</h3>
+                <p>Daily rotation</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <site-cart-overlay></site-cart-overlay>
+    <site-footer></site-footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090a09" />
+    <meta name="description" content="Explore everyday sneakers and classic footwear from LOOO." />
+    <title>Collection | LOOO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <script src="js/collections-catalog.js" defer></script>
+    <script src="js/cart-store.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/collections.js" defer></script>
+    <script src="js/components/site-nav.js" defer></script>
+    <script src="js/components/site-footer.js" defer></script>
+    <script src="js/scroll-reveal.js" defer></script>
+  </head>
+  <body>
+    <main class="storefront">
+      <site-nav current-page="collection"></site-nav>
+      <section class="page-intro collection-banner" aria-labelledby="collection-title">
+        <h1 id="collection-title">Our Brand Collection</h1>
+        <p>Discover our wide range of shoes</p>
+      </section>
+      <section class="page-content" aria-label="Available shoes">
+        <div class="collection-search">
+          <label class="visually-hidden" for="collection-search-input">Search shoes</label>
+          <svg class="collection-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <input id="collection-search-input" type="search" placeholder="Search shoes by name, color, or style" autocomplete="off" />
+          <button id="collection-search-clear" type="button" aria-label="Clear search" hidden>Clear</button>
+        </div>
+        <div class="collection-results-toolbar">
+          <p class="collection-search-status" id="collection-search-status" aria-live="polite"></p>
+          <label class="collection-audience-filter" for="collection-audience-filter">
+            <span>Filter</span>
+            <select id="collection-audience-filter">
+              <option value="all">All shoes</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="kids">Kids</option>
+            </select>
+          </label>
+        </div>
+        <div class="collection-grid" id="collection-grid"></div>
+        <nav class="collection-pagination" id="collection-pagination" aria-label="Collection pages"></nav>
+        <p class="visually-hidden" id="collection-cart-feedback" aria-live="polite"></p>
+      </section>
+    </main>
+    <site-cart-overlay></site-cart-overlay>
+    <site-footer></site-footer>
+  </body>
+</html>
